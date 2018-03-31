@@ -19,7 +19,7 @@ class Modal extends React.Component {
     }
     render() {
         return (
-            <Fragment>
+            <div>
             {this.props.open &&        
                 <div className="reveal-overlay" style={Object.assign({}, this.props.overlayStyle, Default.overlayRequiredStyle)} onClick={() => this.makeModal()}>
                     <div data-animate="slide-in-down slide-out-up" className={`${this.props.size} reveal`} style={{display: 'block'}}>
@@ -32,7 +32,7 @@ class Modal extends React.Component {
                     </div>
                 </div>
             }
-            </Fragment>
+            </div>
         );
     }
 }
