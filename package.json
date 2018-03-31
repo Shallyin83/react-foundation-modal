@@ -1,0 +1,61 @@
+{
+  "name": "react-foundation-modal",
+  "version": "0.1.0",
+  "description": "Simple modal dialog using foundation",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shallyin83/react-foundation-modal.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack -p"
+  },
+  "author": "Shailendra Singh <shallyin83@gmail.com>",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-react-jsx",
+      "transform-class-properties"
+    ]
+  },
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "eslint-plugin-class-property": "^1.1.0",
+    "webpack-cli": "^2.0.13"
+  },
+  "tags": [
+    "react",
+    "modal",
+    "dialog",
+    "foundation"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "modal",
+    "dialog",
+    "react foundation modal",
+    "foundation"
+  ]
+}
