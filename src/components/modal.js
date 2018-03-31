@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import Default from '../helpers/default';
 
-const overlayRequiredStyle = {display: 'block'};
 class Modal extends React.Component {
     closeModal = () => {
         this.props.closeModal(false);
@@ -16,7 +16,7 @@ class Modal extends React.Component {
         return (
             <Fragment>
             {this.props.open &&        
-                <div className="reveal-overlay" style={Object.assign({}, this.props.overlayStyle, overlayRequiredStyle)} onClick={() => this.makeModal()}>
+                <div className="reveal-overlay" style={Object.assign({}, this.props.overlayStyle, Default.overlayRequiredStyle)} onClick={() => this.makeModal()}>
                     <div data-animate="slide-in-down slide-out-up" className={`${this.props.size} reveal`} style={{display: 'block'}}>
                         {!this.props.hideCloseButton && 
                             <button className="close-button" data-close aria-label="Close modal" type="button" onClick={() => this.closeModal()} >
