@@ -3,10 +3,15 @@ import PropTypes from 'prop-types';
 import Default from '../helpers/default';
 
 class Modal extends React.Component {
-    closeModal = () => {
+    constructor() {
+        super();
+        this.closeModal.bind();
+        this.makeModal.bind();
+    }
+    closeModal() {
         this.props.closeModal(false);
     }
-    makeModal = () => {
+    makeModal() {
         if(this.props.isModal){
             return;
         }
