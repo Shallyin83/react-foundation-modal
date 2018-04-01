@@ -5,8 +5,8 @@ import Default from '../helpers/default';
 class Modal extends React.Component {
     constructor() {
         super();
-        this.closeModal = this.closeModal.bind();
-        this.makeModal = this.makeModal.bind();
+        this.closeModal.bind();
+        this.makeModal.bind();
     }
     componentDidMount(){
         document.addEventListener('keyup', function(e){
