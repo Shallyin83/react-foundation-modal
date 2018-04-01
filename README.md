@@ -1,5 +1,5 @@
 # react-foundation-modal
-[![Build Status](https://travis-ci.org/Shallyin83/react-foundation-modal.svg?branch=master)](https://github.com/Shallyin83/react-foundation-modal)
+[![Build Status](https://travis-ci.org/Shallyin83/react-foundation-modal.svg?branch=master)](https://travis-ci.org/Shallyin83/react-foundation-modal)
 
 This is a Simple Modal Dialog using foundation.
 
