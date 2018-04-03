@@ -42,8 +42,13 @@ import Modal from 'react-foundation-modal';
 
 const overlayStyle = {
     'backgroundColor': 'rgba(33,10,10,.45)'
-    };
-
+};
+const revealStyle = {
+    'backgroundColor': 'burlywood'
+};
+const closeStyle = {
+    'font-size': '1rem'
+};
 class App extends React.Component {
   constructor(){
         super();
@@ -66,6 +71,8 @@ class App extends React.Component {
                 closeModal={this.showPopup}
                 isModal={true}
                 size="large"
+                closeStyle={closeStyle} 
+                revealStyle={revealStyle}
                 overlayStyle={overlayStyle} >
                 <h1>Awesome. I Have It.</h1>
                 <p className="lead">Your couch. It is mine.</p>
