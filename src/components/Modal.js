@@ -32,9 +32,9 @@ class Modal extends React.Component {
             <div>
             {this.props.open &&        
                 <div className="reveal-overlay" style={Object.assign({}, this.props.overlayStyle, Default.overlayRequiredStyle)} onClick={() => this.makeModal()}>
-                    <div data-animate="slide-in-down slide-out-up" className={`${this.props.size} reveal`} style={{display: 'block'}}>
+                    <div className={`${this.props.size} reveal`} style={Object.assign({}, this.props.revealStyle, Default.revealRequiredStyle)} >
                         {!this.props.hideCloseButton && 
-                            <button className="close-button" data-close aria-label="Close modal" type="button" onClick={() => this.closeModal()} >
+                            <button className="close-button" style={this.props.closeStyle} type="button" onClick={() => this.closeModal()} >
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         }
@@ -51,7 +51,9 @@ Modal.defaultProps = {
     isModal: false,
     hideCloseButton: false,
     size: 'small',
-    overlayStyle: {}
+    overlayStyle: {},
+    revealStyle: {},
+    closeStyle: {}
 }
 Modal.propTypes = {
     open: PropTypes.bool.isRequired,
@@ -59,6 +61,8 @@ Modal.propTypes = {
     hideCloseButton: PropTypes.bool,
     size: PropTypes.string,
     closeModal: PropTypes.func,
-    overlayStyle: PropTypes.shape({})
+    overlayStyle: PropTypes.shape({}),
+    revealStyle: PropTypes.shape({}),
+    closeStyle: PropTypes.shape({})
   };
 export default Modal;
