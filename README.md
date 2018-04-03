@@ -29,6 +29,8 @@ To install, you can use [npm](https://npmjs.org/):
 | isModal      | option   | Boolean   | to make the popup modal poup                       | false |
 | size       | option   | String   | to set modal size               | tiny, small, large, full              |
 | overlayStyle      | option   | Object   | to override overlay style               | -              |
+| revealStyle      | option   | Object   | to override modal style               | -              |
+| closeStyle      | option   | Object   | to override close button style               | -              |
 | closeModal | required   | Function | callback function to set modal open to false | -                            |
 
 ## Examples
@@ -42,13 +44,8 @@ import Modal from 'react-foundation-modal';
 
 const overlayStyle = {
     'backgroundColor': 'rgba(33,10,10,.45)'
-};
-const revealStyle = {
-    'backgroundColor': 'burlywood'
-};
-const closeStyle = {
-    'font-size': '1rem'
-};
+    };
+
 class App extends React.Component {
   constructor(){
         super();
@@ -71,8 +68,6 @@ class App extends React.Component {
                 closeModal={this.showPopup}
                 isModal={true}
                 size="large"
-                closeStyle={closeStyle} 
-                revealStyle={revealStyle}
                 overlayStyle={overlayStyle} >
                 <h1>Awesome. I Have It.</h1>
                 <p className="lead">Your couch. It is mine.</p>
@@ -85,7 +80,6 @@ class App extends React.Component {
     );
   }
 }
-
 
 ReactDOM.render(<App />, appElement);
 ```
