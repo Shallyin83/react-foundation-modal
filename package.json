@@ -1,6 +1,6 @@
 {
   "name": "react-foundation-modal",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Simple modal dialog using foundation",
   "main": "build/index.js",
   "repository": {
